@@ -10,14 +10,24 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.create_cmake_project"
+		"onCommand:extension.create_cmake_project",
+		"onCommand:extension.create_header",
+		"onCommand:extension.create_class"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
 			{
 				"command": "extension.create_cmake_project",
-				"title": "create_cmake_project"
+				"title": "cpp:create_cmake_project"
+			},
+			{
+				"command": "extension.create_header",
+				"title": "cpp:create_header"
+			},
+			{
+				"command": "extension.create_class",
+				"title": "cpp:create_class"
 			}
 		]
 	},
