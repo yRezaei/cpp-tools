@@ -1,6 +1,6 @@
 {
-	"name": "cpp-tools",
-	"displayName": "cpp-tools",
+	"name": "c++-tools",
+	"displayName": "c++-tools",
 	"description": "Helper tools for better productivity",
 	"version": "0.0.1",
 	"engines": {
@@ -19,15 +19,11 @@
 		"commands": [
 			{
 				"command": "extension.create_cmake_project",
-				"title": "cpp:create_cmake_project"
-			},
-			{
-				"command": "extension.create_header",
-				"title": "cpp:create_header"
+				"title": "c++: create cmake project"
 			},
 			{
 				"command": "extension.create_class",
-				"title": "cpp:create_class"
+				"title": "c++: create class"
 			}
 		]
 	},

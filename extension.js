@@ -12,8 +12,9 @@ const Creator = require('./src/creator');
 /**
  * @param {vscode.ExtensionContext} context
  */
-function activate(context) {
-	console.log('"cpp-tools" is now active!');
+function activate(context) 
+{
+	console.log('[c++-tools] is now active!');
 	let creator = new Creator();
 
 	let disposable_create_cmake_project = vscode.commands.registerCommand(
@@ -24,14 +25,6 @@ function activate(context) {
 	);
 	context.subscriptions.push(disposable_create_cmake_project);
 
-	let disposable_create_header = vscode.commands.registerCommand(
-		'extension.create_header',
-		function () {
-			creator.create_header();
-		}
-	);
-	context.subscriptions.push(disposable_create_header);
-
 	let disposable_create_class = vscode.commands.registerCommand(
 		'extension.create_class',
 		function () {
@@ -39,7 +32,6 @@ function activate(context) {
 		}
 	);
 	context.subscriptions.push(disposable_create_class);
-
 }
 exports.activate = activate;
 

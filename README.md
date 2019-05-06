@@ -1,6 +1,6 @@
-# cpp-tools README
+# c++-tools README
 
-This is the README for your extension "cpp-tools". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "c++-tools". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
