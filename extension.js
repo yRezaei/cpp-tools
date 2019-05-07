@@ -3,9 +3,6 @@
 const vscode = require('vscode');
 const Creator = require('./src/creator');
 
-
-
-
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 
@@ -14,7 +11,7 @@ const Creator = require('./src/creator');
  */
 function activate(context) 
 {
-	console.log('[c++-tools] is now active!');
+	console.log('[C++Tools] is now active!');
 	let creator = new Creator();
 
 	let disposable_create_cmake_project = vscode.commands.registerCommand(
@@ -32,6 +29,14 @@ function activate(context)
 		}
 	);
 	context.subscriptions.push(disposable_create_class);
+
+	let disposable_update_function_signature = vscode.commands.registerCommand(
+		'extension.update_function_signature',
+		function () {
+			creator.update_function_signature();
+		}
+	);
+	context.subscriptions.push(disposable_update_function_signature);
 }
 exports.activate = activate;
 

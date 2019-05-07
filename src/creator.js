@@ -185,6 +185,23 @@ class Creator
             });
         }
     }
+
+    async update_function_signature()
+    {
+        if(!vscode.workspace.workspaceFolders) {
+            vscode.window.showErrorMessage("No folder or workspace available.");
+            return;
+        }
+
+        const active_doc = vscode.window.activeTextEditor;
+        if(!active_doc)
+            return;
+        
+        let doc_test = active_doc.document.getText();
+        
+
+
+    }
 }
 
 module.exports = Creator

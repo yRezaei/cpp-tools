@@ -1,6 +1,6 @@
 {
-	"name": "c++-tools",
-	"displayName": "c++-tools",
+	"name": "C++Tools",
+	"displayName": "C++Tools",
 	"description": "Helper tools for better productivity",
 	"version": "0.0.1",
 	"engines": {
@@ -11,19 +11,23 @@
 	],
 	"activationEvents": [
 		"onCommand:extension.create_cmake_project",
-		"onCommand:extension.create_header",
-		"onCommand:extension.create_class"
+		"onCommand:extension.create_class",
+		"onCommand:extension.update_function_signature"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
 			{
 				"command": "extension.create_cmake_project",
-				"title": "c++: create cmake project"
+				"title": "C++: create cmake project"
 			},
 			{
 				"command": "extension.create_class",
-				"title": "c++: create class"
+				"title": "C++: create class"
+			},
+			{
+				"command": "extension.update_function_signature",
+				"title": "C++: update function signature"
 			}
 		]
 	},
