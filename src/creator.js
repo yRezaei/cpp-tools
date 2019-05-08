@@ -54,9 +54,6 @@ class Creator
                 console.error(err);
                 vscode.window.showErrorMessage("Failed to CMakeLists.txt file.");
             }
-            /* else{
-                vscode.window.showInformationMessage("CMakeLists.txt file created.");
-            } */
         });
     
         fs.writeFile(path.join(folder_path + "/src", "main.cpp"), main_content, err => {
@@ -64,9 +61,6 @@ class Creator
                 console.error(err);
                 vscode.window.showErrorMessage("Failed to main.cpp file.");
             }
-            /* else{
-                vscode.window.showInformationMessage("main.cpp file created.");
-            } */
         });
     
     }
@@ -134,9 +128,6 @@ class Creator
                     console.error(err);
                     vscode.window.showErrorMessage("Failed to create" + file_name + ".hpp file.");
                 }
-                /* else{
-                    vscode.window.showInformationMessage("main.cpp file created.");
-                } */
             });
         }
         else {
@@ -153,9 +144,6 @@ class Creator
                     console.error(err);
                     vscode.window.showErrorMessage("Failed to create" + file_name + ".hpp file.");
                 }
-                /* else{
-                    vscode.window.showInformationMessage("main.cpp file created.");
-                } */
             });
             
             const src_path = (fs.existsSync(folder_path + "/src")) ? (folder_path + "/src") : folder_path;
@@ -179,9 +167,6 @@ class Creator
                     console.error(err);
                     vscode.window.showErrorMessage("Failed to create" + file_name + ".cpp file.");
                 }
-                /* else{
-                    vscode.window.showInformationMessage("main.cpp file created.");
-                } */
             });
         }
     }
