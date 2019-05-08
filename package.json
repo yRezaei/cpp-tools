@@ -8,7 +8,7 @@
 		"type": "git",
 		"url": "https://github.com/yRezaei/cpp-tools"
 	},
-	"icon": "./resources/logo.png",
+	"icon": "./resources/logo1.png",
 	"engines": {
 		"vscode": "^1.33.0"
 	},
