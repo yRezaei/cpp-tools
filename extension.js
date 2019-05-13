@@ -1,7 +1,7 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 const vscode = require('vscode');
-const Creator = require('./src/creator');
+const creator = require('./src/creator');
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -12,7 +12,6 @@ const Creator = require('./src/creator');
 function activate(context) 
 {
 	console.log('[C++Tools] is now active!');
-	let creator = new Creator();
 
 	let disposable_create_cmake_project = vscode.commands.registerCommand(
 		'extension.create_cmake_project',
